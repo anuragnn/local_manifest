@@ -16,10 +16,7 @@
   <!-- kernel -->
   <project path="kernel/xiaomi/selene" name="android_kernel_xiaomi_selene.git" remote="an" revision="thirteen-stable" clone-depth="1" />
 
-  <!-- hack - remove ArrowOS's mtk specific repo and favor LineageOS's instead
-       LineageOS's repo are generally more up to date -->
-  <remove-project name="android_device_mediatek_sepolicy_vndr"/>
-  <remove-project name="android_hardware_mediatek"/>
+
 
   <!-- /* common mtk */ -->
 
