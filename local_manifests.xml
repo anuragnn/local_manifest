@@ -26,6 +26,11 @@
   <!-- sepolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="LOS" revision="lineage-20" clone-depth="1" />
 
+  
+<remove-project name="LineageOS/android_frameworks_av"/>
+  
+<project path="frameworks/av" name="android_frameworks_av.git" remote="an" revision="lineage-20.0">
+ 
   <!-- /* rombuilders stuff */ -->
 
   <!-- clang -->
