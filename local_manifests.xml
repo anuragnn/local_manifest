@@ -4,39 +4,44 @@
   <remote name="t25" fetch="https://github.com/TelegramAt25" />
   <remote name="LOS" fetch="https://github.com/LineageOS" />
   <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
-  <remote name="origin" fetch="https://github.com/YudhoPatrianto" />
+
   <!-- /* device specific */ -->
 
   <!-- device -->
-  <project path="device/xiaomi/selene" name="android_device_xiaomi_selene.git" remote="t25" revision="skyline-13-r2" />
+  <project path="device/xiaomi/selene" name="android_device_xiaomi_selene.git" remote="t25" revision="lineage-20" />
 
   <!-- vendor -->
-  <project path="vendor/xiaomi/selene" name="android_vendor_xiaomi_selene.git" remote="t25" revision="thirteen" clone-depth="1" />
+  <project path="vendor/xiaomi/selene" name="android_vendor_xiaomi_selene.git" remote="t25" revision="thirteen" />
 
   <!-- kernel -->
-  <project path="kernel/xiaomi/selene" name="android_kernel_xiaomi_selene.git" remote="t25" revision="b9faf583e6fba13d3c64d14a13621f2b6d64859e" clone-depth="1" />
+  <project path="kernel/xiaomi/selene" name="android_kernel_xiaomi_selene.git" remote="t25" revision="thirteen-stable" clone-depth="1" />
 
   <!-- /* common mtk */ -->
 
   <!-- hardware -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="LOS" revision="lineage-20" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="LOS" revision="lineage-20" clone-depth="1" />
 
-  <!-- seopolicy -->
-  <project path=device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr" remote="origin" revision="tiramisu" />
-  
+  <!-- sepolicy -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="LOS" revision="lineage-20" clone-depth="1" />
+
+  <!-- /* common ximi */ -->
+
+  <!-- hardware -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi.git" remote="LOS" revision="lineage-20" clone-depth="1" />
+
   <!-- /* rombuilders stuff */ -->
 
   <!-- clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
-
+ 
   <!-- /* hacks */ -->
 
   <!-- fix for telelgram video playing, presumably, and more i guess -->
   <remove-project name="frameworks_av"/>
-  <project path="frameworks/av" name="frameworks_av.git" remote="t25" revision="aosp-13" />
+  <project path="frameworks/av" name="frameworks_av.git" remote="t25" revision="cr-13" />
 
-  <!-- bootanim leg -->
+  <!-- bootanimation dont think you can get away even if im at cirrus -->
   <remove-project name="frameworks_native"/>
-  <project path="frameworks/native" name="frameworks_native.git" remote="t25" revision="aosp-13" />
- 
+  <project path="frameworks/native" name="cr_frameworks_native.git" remote="t25" revision="cr-13" />
+
 </manifest>
