@@ -19,7 +19,7 @@
   <!-- /* common mtk */ -->
 
   <!-- hardware -->
-  <project path="android/hardware/mediatek" name="android_hardware_mediatek.git" remote="an" revision="lineage-20" />
+  <project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="an" revision="lineage-20" />
 
   <!-- sepolicy -->
   <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr.git" remote="pe" revision="thirteen" />
