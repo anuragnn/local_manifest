@@ -3,6 +3,7 @@
 
   <remote name="an" fetch="https://github.com/anuragnn" />
   <remote name="pe" fetch="https://github.com/pixelexperience" />
+  <remote name="LOS" fetch="https://github.com/LineageOS" />
   <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
 
   <!-- /* device specific */ -->
@@ -19,10 +20,12 @@
   <!-- /* common mtk */ -->
 
   <!-- hardware -->
-  <project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="an" revision="lineage-20" />
+<!--   <remove-project name="android_hardware_mediatek"/> -->
+<project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="LOS" revision="lineage-20" />
 
   <!-- sepolicy -->
-  <project path="device/mediatek/sepolicy_vndr" name="device_mediatek_sepolicy_vndr.git" remote="pe" revision="thirteen" />
+<!-- <remove-project name="device_mediatek_sepolicy_vndr"/> -->
+<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="LOS" revision="lineage-20" />
 
   <!-- /* rombuilders stuff */ -->
 
