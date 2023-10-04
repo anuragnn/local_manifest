@@ -19,12 +19,12 @@
 
   <!-- /* common mtk */ -->
 
-  <!-- hardware 
+  <!-- hardware
 <remove-project name="android_hardware_mediatek"/>
 <project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="LOS" revision="lineage-20" /> -->
 
   <!-- sepolicy 
-<!-- <remove-project name="device_mediatek_sepolicy_vndr"/>
+<remove-project name="device_mediatek_sepolicy_vndr"/>
 <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="LOS" revision="lineage-20" /> -->
 
   <!-- /* rombuilders stuff */ -->
