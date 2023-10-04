@@ -2,7 +2,7 @@
 <manifest>
 
   <remote name="an" fetch="https://github.com/anuragnn" />
-  <remote name="pe" fetch="https://github.com/pixelexperience" />
+  <!-- <remote name="pe" fetch="https://github.com/pixelexperience" /> -->
   <remote name="LOS" fetch="https://github.com/LineageOS" />
   <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
 
