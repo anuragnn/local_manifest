@@ -2,7 +2,6 @@
 <manifest>
 
   <remote name="an" fetch="https://github.com/anuragnn" />
-  <!-- <remote name="pe" fetch="https://github.com/pixelexperience" /> -->
   <remote name="LOS" fetch="https://github.com/LineageOS" />
   <remote name="ImSurajxD" fetch="https://gitlab.com/ImSurajxD" />
 
@@ -17,29 +16,15 @@
   <!-- kernel -->
   <project path="kernel/xiaomi/selene" name="android_kernel_xiaomi_selene.git" remote="an" revision="thirteen-stable" clone-depth="1" />
 
-  <!-- /* common mtk */ -->
-
-  <!-- hardware
-<remove-project name="android_hardware_mediatek"/>
-<project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="LOS" revision="lineage-20" /> -->
-
-  <!-- sepolicy 
-<remove-project name="device_mediatek_sepolicy_vndr"/>
-<project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="LOS" revision="lineage-20" /> -->
-
+  
   <!-- /* rombuilders stuff */ -->
 
   <!-- clang -->
   <project path="prebuilts/clang/host/linux-x86/clang-r450784d" name="clang-r450784d" remote="ImSurajxD" revision="master" clone-depth="1" />
 
   <!-- /* hacks */ -->
-
   <!-- fix for telelgram video playing, presumably -->
-  <remove-project name="frameworks_av"/>
+  <remove-project name="android_frameworks_av"/>
   <project path="frameworks/av" name="frameworks_av.git" remote="an" revision="aosp-13" />
 
-  <!-- bootanim leg
-  <remove-project name="frameworks_native"/>
-  <project path="frameworks/native" name="frameworks_native.git" remote="an" revision="aosp-13" />
--->
 </manifest>
