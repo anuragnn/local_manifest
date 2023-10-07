@@ -16,6 +16,17 @@
   <!-- kernel -->
   <project path="kernel/xiaomi/selene" name="android_kernel_xiaomi_selene.git" remote="an" revision="thirteen-stable" clone-depth="1" />
 
+    <!-- hardware -->
+  <project path="hardware/mediatek" name="android_hardware_mediatek.git" remote="LOS" revision="lineage-20" clone-depth="1" />
+
+    <!-- sepolicy -->
+  <project path="device/mediatek/sepolicy_vndr" name="android_device_mediatek_sepolicy_vndr.git" remote="LOS" revision="lineage-20" clone-depth="1" />
+
+  <!-- /* common ximi */ -->
+
+  <!-- hardware -->
+  <project path="hardware/xiaomi" name="android_hardware_xiaomi.git" remote="LOS" revision="lineage-20" clone-depth="1" />
+
   
   <!-- /* rombuilders stuff */ -->
 
