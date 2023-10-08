@@ -36,6 +36,10 @@
   <!-- /* hacks */ -->
   <!-- fix for telelgram video playing, presumably -->
   <remove-project name="LineageOS/android_frameworks_av" />
-  <project path="frameworks/av" name="frameworks_av.git" remote="an" revision="aosp-13" />
+  <project path="frameworks/av" name="frameworks_av.git" remote="an" revision="cr-13" />
 
+  <!-- bootanimation dont think you can get away even if im at cirrus -->
+  <remove-project name="LineageOS/android_frameworks_native"/>
+  <project path="android/frameworks/native" name="android_frameworks_native.git" remote="t25" revision="lineage-20.0" />
+  
 </manifest>
