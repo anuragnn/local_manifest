@@ -44,6 +44,6 @@
 
   <!-- bootanimation dont think you can get away even if im at cirrus -->
   <remove-project name="LineageOS/android_frameworks_native"/>
-  <project path="android/frameworks/native" name="android_frameworks_native.git" remote="t25" revision="lineage-20.0" />
+  <project path="android/frameworks/native" name="android_frameworks_native.git" remote="an" revision="lineage-20.0" />
   
 </manifest>
